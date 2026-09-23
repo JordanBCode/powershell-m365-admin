@@ -9,11 +9,11 @@ mailbox management, permissions, and Windows endpoint administration.
 - [`exchange-online/`](./exchange-online/) — PowerShell scripts for 
   Exchange Online mailbox administration, archiving, retention, and 
   storage monitoring.
-- [`email-investigation/`](./email-investigation/) — Tools and documented 
-  workflows for investigating message delivery, message trace results, 
-  and email security issues.
-- [`permissions/`](./permissions/) — PowerShell tools for investigating 
-  Exchange mailbox permissions and delegated access.
+- [`email-investigation/`](./email-investigation/) — Documented workflows 
+  for investigating message delivery, message trace results, and email 
+  quarantine issues.
+- [`permissions/`](./permissions/) — Documented workflow for investigating 
+  Exchange mailbox permissions and delegated access (Send As).
 - [`windows-endpoint/`](./windows-endpoint/) — PowerShell automation for 
   Windows application deployment and endpoint configuration.
 - [`documentation/`](./documentation/) — Detailed write-ups explaining 
@@ -21,20 +21,33 @@ mailbox management, permissions, and Windows endpoint administration.
 
 ## Why this repo exists
 
-This repository documents practical PowerShell work performed while 
-administering and troubleshooting Microsoft 365 and Windows environments. 
-The scripts focus on repeatable administrative tasks, troubleshooting, 
-email investigation, mailbox management, and automation rather than 
-hypothetical examples — each is documented to explain its purpose, how 
-it works, and the administrative problem it was designed to solve.
+This repository documents practical PowerShell and Microsoft 365 
+administrative work performed on the job. The scripts and write-ups focus 
+on repeatable administrative tasks, troubleshooting, email investigation, 
+mailbox management, and automation rather than hypothetical examples — 
+each is documented to explain its purpose, how it works, and the 
+administrative problem it was designed to solve.
 
 ## Skills Demonstrated
 
-PowerShell scripting and automation, Microsoft 365 administration, 
-Exchange Online administration, mailbox archiving and retention, Exchange 
-Online permissions, message trace investigation, email security 
-troubleshooting, Windows endpoint automation, logging and error handling, 
-administrative troubleshooting.
+PowerShell scripting, Microsoft 365 administration, Exchange Online 
+administration, mailbox archiving and retention, Exchange Online 
+permissions, message trace investigation, email security troubleshooting, 
+Windows endpoint automation, logging and error handling, administrative 
+troubleshooting.
+
+> **A note on script provenance:** The scripts in `exchange-online/` are 
+> sanitized, reconstructed versions of PowerShell workflows I actually 
+> performed on the job — following guided steps for each task and 
+> personally verifying the results at every step (e.g., confirming 
+> archive status changed, confirming retention policy conflicts were 
+> resolved). They are not scripts I authored from scratch or saved as 
+> standalone files at the time. I can walk through the reasoning and 
+> outcome of each step in detail.
+>
+> Message trace and quarantine investigation were performed through the 
+> Exchange Admin Center GUI rather than PowerShell, so those are 
+> documented as workflows in `email-investigation/` rather than scripts.
 
 > **Note:** Scripts and documentation are sanitized for public use. 
 > Company names, domains, usernames, email addresses, tenant-specific 
