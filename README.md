@@ -36,7 +36,7 @@ permissions, message trace investigation, email security troubleshooting,
 Windows endpoint automation, logging and error handling, administrative 
 troubleshooting.
 
-> **A note on script provenance:** The scripts in `exchange-online/` are 
+> **A note on script provenance (`exchange-online/`):** These scripts are 
 > sanitized, reconstructed versions of PowerShell workflows I actually 
 > performed on the job — following guided steps for each task and 
 > personally verifying the results at every step (e.g., confirming 
@@ -48,6 +48,15 @@ troubleshooting.
 > Message trace and quarantine investigation were performed through the 
 > Exchange Admin Center GUI rather than PowerShell, so those are 
 > documented as workflows in `email-investigation/` rather than scripts.
+
+> **A note on script provenance (`windows-endpoint/`):** I identified the 
+> deployment need — standardizing app installs (Chrome, Zoom, Microsoft 
+> 365, Adobe Acrobat Reader) across machines — and built this script 
+> through iterative work with AI assistance: specifying requirements, 
+> refining the logic across multiple versions, and deploying/testing each 
+> version to confirm everything installed correctly. I can walk through 
+> what each section does, why it's structured this way, and what changed 
+> between versions based on real deployment results.
 
 > **Note:** Scripts and documentation are sanitized for public use. 
 > Company names, domains, usernames, email addresses, tenant-specific 
